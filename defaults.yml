@@ -1,0 +1,24 @@
+input-files:
+  - sample/sample.md
+
+output-file: publish/sample.pdf
+
+pdf-engine: xelatex
+# pdf-engine: lualatex
+
+variables:
+  documentclass: bxjsarticle
+  # documentclass: ltjsarticle
+  classoption: pandoc
+
+filters:
+  - pandoc-crossref
+
+metadata:
+  figureTitle: "図 "
+  tableTitle: "表 "
+  listingTitle: "コード "
+  figPrefix: "図."
+  eqnPrefix: "式."
+  tblPrefix: "表."
+  lstPrefix: "コード."
