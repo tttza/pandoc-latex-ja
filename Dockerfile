@@ -20,4 +20,4 @@ RUN apk update && apk add \
     bash \
     git
 
-WORKDIR /build
+WORKDIR /builds
