@@ -1,5 +1,5 @@
 --- 
-title: pandoc-latex-ja with pandoc-crossrefのテスト
+title: pandoc-latex-jaのテスト
 --- 
 
 # test
