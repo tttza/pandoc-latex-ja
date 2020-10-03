@@ -1,6 +1,5 @@
 FROM pandoc/latex:latest
 
-# RUN apk update && apk search  - texlive-xelatex
 RUN tlmgr option repository http://mirror.ctan.org/systems/texlive/tlnet
 RUN tlmgr update --self --all
 RUN tlmgr install \
