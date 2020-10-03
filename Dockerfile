@@ -14,3 +14,10 @@ RUN wget -O - \
     tar Jxf - \
     && mv pandoc-crossref /usr/lib/ \
     && rm -rf pandoc-crossref.1
+
+# gitlab-ciで動作するよう修正。 ref: https://github.com/brospars/docker-pandoc-gitlab-ci
+RUN apk update && apk add \
+    bash \
+    git
+
+WORKDIR /build
