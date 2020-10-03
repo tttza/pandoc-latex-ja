@@ -20,6 +20,6 @@ RUN apk update && apk add \
     bash \
     git
 
-ENTRYPOINT ["/bin/bash", "-l", "-c"]
+ENTRYPOINT ["/bin/bash", "-c"]
 
 WORKDIR /build
