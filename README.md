@@ -51,6 +51,7 @@ docker run -it --volume `pwd -W`:/build tttza/pandoc-latex-ja:latest "pandoc -d 
 
 ## GitLab CI例
 
+`.gitlab-ci.yml`:
 ```yaml
 build:
   image: tttza/pandoc-latex-ja:latest
